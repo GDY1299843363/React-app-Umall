@@ -1,0 +1,44 @@
+@import("../../../../stylus/index.styl");
+.picker
+   width 100vw
+   height 100vh
+   background: $backBTM
+   position fixed
+   left 0
+   bottom: 0
+   .con
+       width 100vw
+       height 60vh
+       overflow-y: auto
+       background: $font-fff
+       position absolute
+       left 0
+       bottom: 0
+       h5
+        float left
+        font-size: $h1
+        color: $primary 
+       .img-parent
+   
+           width $wimg
+           height $wimg
+           img 
+             width 100%
+             height 100%
+            p
+             position absolute
+             left 30%
+             top: $margin
+        .spec-title
+            font-size: $h1
+            color: $primary     
+         .btns
+           margin-top: $margin
+           b 
+                float left
+                padding $padding $margin 
+                margin $margin 
+                border $borderWidth solid $font-color2 
+            .active
+                border $borderWidth solid $primary
+                color $primary 

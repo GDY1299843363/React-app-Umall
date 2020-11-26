@@ -1,0 +1,83 @@
+@import("../../stylus/index.styl");
+.shop
+  .item
+     width: 100vw
+     overflow hidden
+     .inner
+        width:  $zongw
+        height:  $wimg
+        // border: $borderWidth solid $font-color3
+        box-sizing: border-box
+        overflow hidden
+        position relative
+        transition: all 0.3s 
+        margin-bottom: $margin
+        .img 
+          float left
+          width $h2
+          height $h2
+          margin-right:  $margin
+          margin-top: $footerHeight
+          margin-left: $margin
+        .info
+            float left
+            h3
+             line-height: $footerHeight
+             height $footerHeight
+             font-size: $h2
+            .price
+               position absolute
+               right   $delw
+
+            ul
+              margin-bottom: $margin
+             li
+              border: $borderWidth  solid  $font-color3
+              float left
+              text-align: center
+              width $footerHeight
+              height $h1
+              font-size: $h2
+            .zongjia
+               font-size: $h2 
+        .logo 
+          float left       
+          img
+            width $flashw
+            height $flashw 
+            margin-top: $margin
+            margin-right: $margin
+        .del
+            float right 
+            width  $delw
+            height 100vw
+            background: $primary 
+            color: $font-fff 
+            text-align: center
+            line-height:  $delw
+                
+    .inner-show-del   
+       margin-left: -1.8rem   
+  .footer
+        
+        width: 100vw 
+        height: $footerHeight 
+        position fixed 
+        background: $font-fff 
+        left 0 
+        bottom: $footerHeight 
+        border-top: $borderWidth solid $font-color3
+        box-sizing: border-box
+        img 
+         width $h2
+         height $h2
+     .all
+        float left
+        margin 0 $margin
+     .edit
+        float left 
+        margin 0 $margin
+     .allprice
+        float left
+        margin 0 $margin   
+     
