@@ -1,14 +1,23 @@
 @import("../../../../stylus/index.styl");
 .nav
     display: flex
-    background: yellow
-    margin-bottom:  $margin
 
+    margin-bottom:  $margin
+    padding-bottom: $margin
     .nav-box
         background: $Navbg
         width $Navflex
         height $Navflex
-        margin: $padding
+        margin: $margin
+        text-align: center
+        img 
+         width 100%
+         height 100%
+         margin-bottom: $margin
+         a
+          display: block
+          margin-bottom: $margin
+          margin-left: $margin
         h3 
             font-size: $h1 
             color: $primary

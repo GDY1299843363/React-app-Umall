@@ -6,6 +6,7 @@ import './assets/css/reset.css'
 // remjs
 import './assets/js/rem'
 
+import "./assets/css/swiper.min.css"
 //配置路由模式 HashRouter：hash模式 BrowserRouter：history模式
 import { HashRouter, BrowserRouter } from "react-router-dom"
 

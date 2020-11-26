@@ -12,7 +12,7 @@ export default class Home extends Component {
             goods: [
 
             ],
-            banner:[]
+            banner: []
         }
     }
     componentDidMount() {
@@ -21,26 +21,26 @@ export default class Home extends Component {
                 goods: res.data.list[0].content
             })
         })
-        reqbanner().then(res=>{
-         this.setState({
-             banner:res.data.list
-         })
+        reqbanner().then(res => {
+            this.setState({
+                banner: res.data.list
+            })
         })
     }
     render() {
-        let { goods,banner } = this.state
+        let { goods, banner } = this.state
         return (
             <div>
                 <Header title='首页'></Header>
                 {/* 顶部信息 */}
                 <Info></Info>
                 {/* 轮播图 */}
-                <Banner></Banner>
+                {banner.length ? <Banner banner={banner}></Banner> : null}
                 {/* 导航 */}
                 <Nav></Nav>
                 {/* 列表 */}
-                <GoodsList goods={goods} banner ={banner}></GoodsList>
-            </div>
+                <GoodsList goods={goods} banner={banner}></GoodsList>
+            </div >
         )
     }
 }
